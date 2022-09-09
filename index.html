@@ -23,54 +23,54 @@
   <body class="body">
     <!-- Header-->
     <header class="header">
-      <div class="container container-header">
-        <nav>
+      <div class="container header__container">
+        <nav class="navigation">
           <!--Logo-->
-          <a href="./index.html" class="links-general header-logo-link"
-            ><span class="logo-text-accent">Web</span>Studio</a
+          <a href="./index.html" class="links logo"
+            ><span class="logo__text-accent">Web</span>Studio</a
           >
           <!--Browser-->
-          <ul class="content-list-general">
-            <li>
+          <ul class="list menu navigation__menu">
+            <li class="menu__item">
               <a
                 href="./index.html"
-                class="links-general links-selection header-nav-link selected-link"
+                class="links links--selected menu__link menu__item--current"
                 >Студія</a
               >
             </li>
             <li>
               <a
                 href="./portfolio.html"
-                class="links-general links-selection header-nav-link"
+                class="links links--selected menu__link"
                 >Портфоліо</a
               >
             </li>
             <li>
-              <a href="#" class="links-general links-selection header-nav-link"
+              <a href="#" class="links links--selected menu__link"
                 >Контакти</a
               >
             </li>
           </ul>
         </nav>
         <!--Contact links-->
-        <ul class="content-list-general">
-          <li>
+        <ul class="list navigation__contacts contacts">
+          <li class="contacts__item">
             <a
               href="mailto:info@devstudio.com"
-              class="links-general links-selection header-adress-link"
+              class="links links--selected contacts__link"
             >
-              <svg class="header-adress-link-icon">
+              <svg class="contacts__icon">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="contacts__item">
             <a
               href="tel:++380961111111"
-              class="links-general links-selection header-adress-link"
+              class="links links--selected contacts__link"
             >
-              <svg class="header-adress-link-icon">
+              <svg class="contacts__icon">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -80,7 +80,7 @@
       </div>
     </header>
     <!-- Main content-->
-    <main class="main-content">
+    <main class="main">
       <!--Hero section-->
       <section class="hero-section">
         <div class="hero-container">
@@ -183,59 +183,59 @@
       <!--Staff-->
       <section class="staff section">
         <div class="container">
-          <h2 class="section-header">Наша команда</h2>
-          <ul class="content-list-general staff-list">
-            <li class="staff-list-item">
+          <h2 class="section__header">Наша команда</h2>
+          <ul class="list staff__list">
+            <li class="staff__item">
               <img
                 src="./images/igor-demyanenko.jpg"
                 alt="Фото Ігоря Дем'яненка"
                 width="270"
-                class="image-display"
+                class="image"
               />
-              <div class="staff-member-descr">
-                <h3>Ігор Дем'яненко</h3>
-                <p>Product Designer</p>
-                <ul class="content-list-general staff-socialmedia-list">
-                  <li class="socialmedia-list-item">
+              <div class="staff__meta">
+                <h3 class="staff__name">Ігор Дем'яненко</h3>
+                <p class="staff__position">Product Designer</p>
+                <ul class="list socialmedia socialmedia--centered">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Інстаграм"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socialmedia-list-item">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Твіттер"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socialmedia-list-item">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Фейсбук"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socialmedia-list-item">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Лінкдін"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -243,57 +243,57 @@
                 </ul>
               </div>
             </li>
-            <li class="staff-list-item">
+                  <li class="staff__item">
               <img
                 src="./images/olga-repina.jpg"
                 alt="Фото Ольги Рєпіної"
                 width="270"
-                class="image-display"
+                class="image"
               />
-              <div class="staff-member-descr">
-                <h3>Ольга Рєпіна</h3>
-                <p>Frontend Developer</p>
-                <ul class="content-list-general staff-socialmedia-list">
-                  <li class="socialmedia-list-item">
+              <div class="staff__meta">
+                <h3 class="staff__name">Ольга Рєпіна</h3>
+                <p class="staff__position">Frontend Developer</p>
+                 <ul class="list socialmedia socialmedia--centered">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Інстаграм"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socialmedia-list-item">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Твіттер"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socialmedia-list-item">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Фейсбук"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socialmedia-list-item">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Лінкдін"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -301,57 +301,57 @@
                 </ul>
               </div>
             </li>
-            <li class="staff-list-item">
+                    <li class="staff__item">
               <img
                 src="./images/mykola-tarasov.jpg"
                 alt="Фото Миколи Тарасова"
                 width="270"
-                class="image-display"
+                class="image"
               />
-              <div class="staff-member-descr">
-                <h3>Микола Тарасов</h3>
-                <p>Marketing</p>
-                <ul class="content-list-general staff-socialmedia-list">
-                  <li class="socialmedia-list-item">
+              <div class="staff__meta">
+                <h3 class="staff__name">Микола Тарасов</h3>
+                <p class="staff__position">Marketing</p>
+                 <ul class="list socialmedia socialmedia--centered">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Інстаграм"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socialmedia-list-item">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Твіттер"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socialmedia-list-item">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Фейсбук"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socialmedia-list-item">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Лінкдін"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -359,57 +359,57 @@
                 </ul>
               </div>
             </li>
-            <li class="staff-list-item">
+                    <li class="staff__item">
               <img
                 src="./images/myhailo-yermakov.jpg"
                 alt="Фото Михайла Єрмакова"
                 width="270"
-                class="image-display"
+                class="image"
               />
-              <div class="staff-member-descr">
-                <h3>Михайло Єрмаков</h3>
-                <p>UI Designer</p>
-                <ul class="content-list-general staff-socialmedia-list">
-                  <li class="socialmedia-list-item">
+              <div class="staff__meta">
+                <h3 class="staff__name">Михайло Єрмаков</h3>
+                <p class="staff__position">UI Designer</p>
+                <ul class="list socialmedia socialmedia--centered">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Інстаграм"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socialmedia-list-item">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Твіттер"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socialmedia-list-item">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Фейсбук"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socialmedia-list-item">
+                  <li class="socialmedia__item">
                     <a
                       href="#"
                       aria-label="Посилання на Лінкдін"
-                      class="socialmedia-link"
+                      class="socialmedia__link socialmedia__link--light"
                     >
-                      <svg class="socialmedia-list-icon">
+                      <svg class="socialmedia__icon socialmedia__icon--light">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -428,7 +428,7 @@
             <li>
               <a
                 href="#"
-                class="links-general links-selection clients-list-link"
+                class="links links--selected clients-list-link"
                 aria-label="Партнер номер 1"
               >
                 <svg class="clients-list-icon">
@@ -439,7 +439,7 @@
             <li>
               <a
                 href="#"
-                class="links-general links-selection clients-list-link"
+                class="links links--selected clients-list-link"
                 aria-label="Партнер номер 2"
               >
                 <svg class="clients-list-icon">
@@ -450,7 +450,7 @@
             <li>
               <a
                 href="#"
-                class="links-general links-selection clients-list-link"
+                class="links links--selected clients-list-link"
                 aria-label="Партнер номер 3"
               >
                 <svg class="clients-list-icon">
@@ -461,7 +461,7 @@
             <li>
               <a
                 href="#"
-                class="links-general links-selection clients-list-link"
+                class="links links--selected clients-list-link"
                 aria-label="Партнер номер 4"
               >
                 <svg class="clients-list-icon">
@@ -472,7 +472,7 @@
             <li>
               <a
                 href="#"
-                class="links-general links-selection clients-list-link"
+                class="links links--selected clients-list-link"
                 aria-label="Партнер номер 5"
               >
                 <svg class="clients-list-icon">
@@ -483,7 +483,7 @@
             <li>
               <a
                 href="#"
-                class="links-general links-selection clients-list-link"
+                class="links links--selected clients-list-link"
                 aria-label="Партнер номер 6"
               >
                 <svg class="clients-list-icon">
@@ -497,92 +497,98 @@
     </main>
     <!--Footer-->
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer-contacts-block">
+      <div class="container footer__container">
+        <div class="footer__address">
           <!--Logo-->
-          <a href="./index.html" class="links-general footer-logo-text"
-            ><span class="logo-text-accent">Web</span>Studio</a
+          <a href="./index.html" class="links logo footer__logo"
+            ><span class="logo__text-accent">Web</span>Studio</a
           >
           <!--Footer info-->
-          <address>
-            <ul class="content-list-general footer-content-list">
-              <li>
+          <address class="address">
+            <ul class="list address__list">
+              <li class="address__item">
                 <a
                   href="https://goo.gl/maps/vt1rgCMrE2ZLCeFa9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="links-general links-selection footer-adress-link"
+                  class="links links--selected address__link--accent"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li>
+              <li class="address__item">
                 <a
                   href="mailto:info@devstudio.com"
-                  class="links-general links-selection footer-contacts-link"
+                  class="links links--selected address__link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li>
+              <li class="address__item">
                 <a
                   href="tel:++380961111111"
-                  class="links-general links-selection footer-contacts-link"
+                  class="links links--selected address__link"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-socialmedia-block">
-          <p class="footer-claimer">Приєднуйтесь</p>
-          <ul class="content-list-general footer-socialmedia-list">
-            <li class="footer-socialmedia-list-item">
+        <div class="footer__socialmedia">
+          <p class="footer__claimer">Приєднуйтесь</p>
+          <ul class="list socialmedia">
+            <li class="socialmedia__item">
               <a
                 href="#"
                 aria-label="Посилання на Інстаграм"
-                class="footer-socialmedia-link"
+                class="socialmedia__link socialmedia__link--dark"
               >
-                <svg class="footer-socialmedia-icon">
+                <svg class="socialmedia__icon socialmedia__icon--dark">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socialmedia-list-item">
+            <li class="socialmedia__item">
               <a
                 href="#"
                 aria-label="Посилання на Твіттер"
-                class="footer-socialmedia-link"
+                class="socialmedia__link socialmedia__link--dark"
               >
-                <svg class="footer-socialmedia-icon">
+                <svg class="socialmedia__icon socialmedia__icon--dark">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socialmedia-list-item">
+            <li class="socialmedia__item">
               <a
                 href="#"
                 aria-label="Посилання на Фейсбук"
-                class="footer-socialmedia-link"
+                class="socialmedia__link socialmedia__link--dark"
               >
-                <svg class="footer-socialmedia-icon">
+                <svg class="socialmedia__icon socialmedia__icon--dark">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socialmedia-list-item">
+            <li class="socialmedia__item">
               <a
                 href="#"
                 aria-label="Посилання на Лінкдін"
-                class="footer-socialmedia-link"
+                class="socialmedia__link socialmedia__link--dark"
               >
-                <svg class="footer-socialmedia-icon">
+                <svg class="socialmedia__icon socialmedia__icon--dark">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-subscription-block">
-          <p class="footer-claimer">Підпишіться на розсилку</p>
+
+
+
+
+
+
+        <div class="footer__subscription">
+          <p class="footer__claimer">Підпишіться на розсилку</p>
           <form action="javascript:void(0);" class="subscription-form">
             <label for="subsctiption">
               <input
@@ -678,7 +684,7 @@
               ></label
             >
           </div>
-          <button class="btn-genera modal-submit-btn">Відправити</button>
+          <button class="btn modal-submit-btn">Відправити</button>
         </form>
       </div>
     </div>

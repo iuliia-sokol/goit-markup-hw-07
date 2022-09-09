@@ -327,93 +327,95 @@
     </main>
     <!--Footer-->
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer-contacts-block">
+      <div class="container footer__container">
+        <div class="footer__address">
           <!--Logo-->
-          <a href="./index.html" class="links-general footer-logo-text"
-            ><span class="logo-text-accent">Web</span>Studio</a
+          <a href="./index.html" class="links logo footer__logo"
+            ><span class="logo__accent">Web</span>Studio</a
           >
-          <!--Footer info-->
-          <address>
-            <ul class="content-list-general footer-content-list">
-              <li>
+          <!--Address-->
+          <address class="address">
+            <ul class="list address__list">
+              <li class="address__item">
                 <a
                   href="https://goo.gl/maps/vt1rgCMrE2ZLCeFa9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="links-general links-selection footer-adress-link"
+                  class="links links--selected address__link--accent"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li>
+              <li class="address__item">
                 <a
                   href="mailto:info@devstudio.com"
-                  class="links-general links-selection footer-contacts-link"
+                  class="links links--selected address__link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li>
+              <li class="address__item">
                 <a
                   href="tel:++380961111111"
-                  class="links-general links-selection footer-contacts-link"
+                  class="links links--selected address__link"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-socialmedia-block">
-          <p class="footer-claimer">Приєднуйтесь</p>
-          <ul class="content-list-general footer-socialmedia-list">
-            <li class="footer-socialmedia-list-item">
+        <!-- Social media -->
+        <div class="footer__socialmedia">
+          <p class="footer__offer">Приєднуйтесь</p>
+          <ul class="list socialmedia">
+            <li class="socialmedia__item">
               <a
                 href="#"
                 aria-label="Посилання на Інстаграм"
-                class="footer-socialmedia-link"
+                class="socialmedia__link socialmedia__link--dark"
               >
-                <svg class="footer-socialmedia-icon">
+                <svg class="socialmedia__icon socialmedia__icon--dark">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socialmedia-list-item">
+            <li class="socialmedia__item">
               <a
                 href="#"
                 aria-label="Посилання на Твіттер"
-                class="footer-socialmedia-link"
+                class="socialmedia__link socialmedia__link--dark"
               >
-                <svg class="footer-socialmedia-icon">
+                <svg class="socialmedia__icon socialmedia__icon--dark">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socialmedia-list-item">
+            <li class="socialmedia__item">
               <a
                 href="#"
                 aria-label="Посилання на Фейсбук"
-                class="footer-socialmedia-link"
+                class="socialmedia__link socialmedia__link--dark"
               >
-                <svg class="footer-socialmedia-icon">
+                <svg class="socialmedia__icon socialmedia__icon--dark">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socialmedia-list-item">
+            <li class="socialmedia__item">
               <a
                 href="#"
                 aria-label="Посилання на Лінкдін"
-                class="footer-socialmedia-link"
+                class="socialmedia__link socialmedia__link--dark"
               >
-                <svg class="footer-socialmedia-icon">
+                <svg class="socialmedia__icon socialmedia__icon--dark">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-subscription-block">
-          <p class="footer-claimer">Підпишіться на розсилку</p>
-          <form action="javascript:void(0);" class="subscription-form">
+        <!-- Subscription form -->
+        <div class="footer__subscription">
+          <p class="footer__offer">Підпишіться на розсилку</p>
+          <form action="javascript:void(0);" class="subscription">
             <label for="subsctiption">
               <input
                 type="email"
@@ -421,10 +423,11 @@
                 name="subsctiption"
                 placeholder="E-mail"
                 required
+                class="subsctiption__input"
               />
             </label>
-            <button type="submit" class="btn-genera submit-btn">
-              Підписатися<svg class="footer-socialmedia-icon">
+            <button type="submit" class="submit-btn footer__submit-btn">
+              Підписатися<svg class="submit-btn__icon">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>

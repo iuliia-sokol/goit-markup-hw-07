@@ -534,7 +534,7 @@
         </div>
         <!-- Social media -->
         <div class="footer__socialmedia">
-          <p class="footer__claimer">Приєднуйтесь</p>
+          <p class="footer__offer">Приєднуйтесь</p>
           <ul class="list socialmedia">
             <li class="socialmedia__item">
               <a
@@ -584,7 +584,7 @@
         </div>
         <!-- Subscription form -->
         <div class="footer__subscription">
-          <p class="footer__claimer">Підпишіться на розсилку</p>
+          <p class="footer__offer">Підпишіться на розсилку</p>
           <form action="javascript:void(0);" class="subscription">
             <label for="subsctiption">
               <input
@@ -596,7 +596,7 @@
                 class="subsctiption__input"
               />
             </label>
-            <button type="submit" class="submit-btn">
+            <button type="submit" class="submit-btn footer__submit-btn">
               Підписатися<svg class="submit-btn__icon">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
@@ -607,82 +607,82 @@
     </footer>
     <!-- Modal form -->
     <div class="modal-overlay is-hidden" data-modal>
-      <div class="modal-window">
-        <button data-modal-close class="modal-close-btn">
-          <svg class="modal-close-btn-icon">
+      <div class="modal">
+        <button data-modal-close class="close-btn">
+          <svg class="close-btn__icon">
             <use href="./images/icons.svg#icon-modal-close-btn"></use>
           </svg>
         </button>
-        <div class="modal-form-wrapper">
-        <form action="javascript:void(0);" class="modal-form">
-          <p>Залиште свої дані, ми вам передзвонимо</p>
-            <label for="username" class="modal-form-label">Ім'я</label>
-            <div class="modal-form-input-wrapper">
+        <div class="modal__wrapper">
+        <form action="javascript:void(0);" class="call-form">
+          <p class="call-form__offer">Залиште свої дані, ми вам передзвонимо</p>
+            <label for="username" class="call-form__label">Ім'я</label>
+            <div class="call-form__wrapper">
             <input
               type="text"
               id="username"
               name="username"
-              class="modal-form-input"
+              class="call-form__input"
               autocomplete="off"
               required
             />
-              <svg class="modal-form-icon">
+              <svg class="call-form__icon">
                 <use href="./images/icons.svg#icon-modal-user"></use>
               </svg>
           </div>
-            <label for="phone" class="modal-form-label">Телефон</label>
-            <div class="modal-form-input-wrapper">
+            <label for="phone" class="call-form__label">Телефон</label>
+            <div class="call-form__wrapper">
             <input
               type="tel"
               id="phone"
               name="phone"
-              class="modal-form-input"
+              class="call-form__input"
               autocomplete="off"
               required
             />
-              <svg class="modal-form-icon">
+              <svg class="call-form__icon">
                 <use href="./images/icons.svg#icon-modal-phone"></use>
               </svg>
           </div>
-            <label for="email" class="modal-form-label">Пошта</label>
-            <div class="modal-form-input-wrapper">
+            <label for="email" class="call-form__label">Пошта</label>
+            <div class="call-form__wrapper">
             <input
               type="email"
               id="email"
               name="email"
-              class="modal-form-input"
+              class="call-form__input"
               autocomplete="off"
               required
             />
-              <svg class="modal-form-icon">
+              <svg class="call-form__icon">
                 <use href="./images/icons.svg#icon-modal-mail"></use>
               </svg> 
           </div>
-          <label for="comment" class="modal-form-label">Коментар</label>
+          <label for="comment" class="call-form__label">Коментар</label>
           <textarea
             name="comment"
             id="comment"
             rows="7"
             placeholder="Введіть текст"
-            class="modal-form-textarea"></textarea>
-          <div class="modal-checkbox-wrapper">
-            <label for="accept" class="modal-checkbox-label">
+            class="call-form__textarea"></textarea>
+          <div class="checkbox">
+            <label for="accept" class="checkbox__label">
               <input
                 type="checkbox"
                 name="accept"
                 id="accept"
                 value="accept"
                 required
-                class="visually-hidden checkbox-mark"
+                class="visually-hidden checkbox__input"
               />
-              <svg class="checkbox-mark-icon">
+              <svg class="checkbox__icon">
                 <use href="./images/icons.svg#icon-modal-check"></use>
-              </svg>Погоджуюся з розсилкою та приймаю <a href="#" class="links-general links-selection"
+              </svg>Погоджуюся з розсилкою та приймаю <a href="#" class="links links--selected checkbox__link"
                 > Умови договору</a
               ></label
             >
           </div>
-          <button class="btn modal-submit-btn">Відправити</button>
+          <button class="submit-btn call-form__btn">Відправити</button>
         </form>
       </div>
     </div>

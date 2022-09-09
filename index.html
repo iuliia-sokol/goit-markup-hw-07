@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="body">
+  <body>
     <!-- Header-->
     <header class="header">
       <div class="container header__container">
@@ -32,14 +32,16 @@
           <!--Browser-->
           <ul class="list navigation__menu menu">
             <li class="menu__item">
-              <a href="./index.html" class="links links--selected menu__link menu__link--current"
+              <a
+                href="./index.html"
+                class="links links--selected menu__link menu__link--current"
                 >Студія</a
               >
             </li>
             <li class="menu__item">
               <a
                 href="./portfolio.html"
-                class="links links--selected menu__link "
+                class="links links--selected menu__link"
                 >Портфоліо</a
               >
             </li>
@@ -239,7 +241,7 @@
                 </ul>
               </div>
             </li>
-                  <li class="staff__item">
+            <li class="staff__item">
               <img
                 src="./images/olga-repina.jpg"
                 alt="Фото Ольги Рєпіної"
@@ -249,7 +251,7 @@
               <div class="staff__meta">
                 <h3 class="staff__name">Ольга Рєпіна</h3>
                 <p class="staff__position">Frontend Developer</p>
-                 <ul class="list socialmedia socialmedia--centered">
+                <ul class="list socialmedia socialmedia--centered">
                   <li class="socialmedia__item">
                     <a
                       href="#"
@@ -297,7 +299,7 @@
                 </ul>
               </div>
             </li>
-                    <li class="staff__item">
+            <li class="staff__item">
               <img
                 src="./images/mykola-tarasov.jpg"
                 alt="Фото Миколи Тарасова"
@@ -307,7 +309,7 @@
               <div class="staff__meta">
                 <h3 class="staff__name">Микола Тарасов</h3>
                 <p class="staff__position">Marketing</p>
-                 <ul class="list socialmedia socialmedia--centered">
+                <ul class="list socialmedia socialmedia--centered">
                   <li class="socialmedia__item">
                     <a
                       href="#"
@@ -355,7 +357,7 @@
                 </ul>
               </div>
             </li>
-                    <li class="staff__item">
+            <li class="staff__item">
               <img
                 src="./images/myhailo-yermakov.jpg"
                 alt="Фото Михайла Єрмакова"
@@ -482,7 +484,7 @@
                 class="links links--selected clients__link"
                 aria-label="Партнер номер 6"
               >
-               <svg class="clients__icon">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg#icon-comp-6"></use>
                 </svg>
               </a>
@@ -610,76 +612,81 @@
           </svg>
         </button>
         <div class="modal-window__wrapper">
-        <form action="javascript:void(0);" class="call-form">
-          <p class="call-form__offer">Залиште свої дані, ми вам передзвонимо</p>
+          <form action="javascript:void(0);" class="call-form">
+            <p class="call-form__offer">
+              Залиште свої дані, ми вам передзвонимо
+            </p>
             <label for="username" class="call-form__label">Ім'я</label>
             <div class="call-form__wrapper">
-            <input
-              type="text"
-              id="username"
-              name="username"
-              class="call-form__input"
-              autocomplete="off"
-              required
-            />
+              <input
+                type="text"
+                id="username"
+                name="username"
+                class="call-form__input"
+                autocomplete="off"
+                required
+              />
               <svg class="call-form__icon">
                 <use href="./images/icons.svg#icon-modal-user"></use>
               </svg>
-          </div>
+            </div>
             <label for="phone" class="call-form__label">Телефон</label>
             <div class="call-form__wrapper">
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              class="call-form__input"
-              autocomplete="off"
-              required
-            />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="call-form__input"
+                autocomplete="off"
+                required
+              />
               <svg class="call-form__icon">
                 <use href="./images/icons.svg#icon-modal-phone"></use>
               </svg>
-          </div>
+            </div>
             <label for="email" class="call-form__label">Пошта</label>
             <div class="call-form__wrapper">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="call-form__input"
-              autocomplete="off"
-              required
-            />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="call-form__input"
+                autocomplete="off"
+                required
+              />
               <svg class="call-form__icon">
                 <use href="./images/icons.svg#icon-modal-mail"></use>
-              </svg> 
-          </div>
-          <label for="comment" class="call-form__label">Коментар</label>
-          <textarea
-            name="comment"
-            id="comment"
-            rows="7"
-            placeholder="Введіть текст"
-            class="call-form__textarea"></textarea>
-          <div class="checkbox">
-            <label for="accept" class="checkbox__label">
-              <input
-                type="checkbox"
-                name="accept"
-                id="accept"
-                value="accept"
-                required
-                class="visually-hidden checkbox__input"
-              />
-              <svg class="checkbox__icon">
-                <use href="./images/icons.svg#icon-modal-check"></use>
-              </svg>Погоджуюся з розсилкою та приймаю <a href="#" class="links links--selected checkbox__link"
-                > Умови договору</a
-              ></label
-            >
-          </div>
-          <button class="submit-btn call-form__btn">Відправити</button>
-        </form>
+              </svg>
+            </div>
+            <label for="comment" class="call-form__label">Коментар</label>
+            <textarea
+              name="comment"
+              id="comment"
+              rows="7"
+              placeholder="Введіть текст"
+              class="call-form__textarea"
+            ></textarea>
+            <div class="checkbox">
+              <label for="accept" class="checkbox__label">
+                <input
+                  type="checkbox"
+                  name="accept"
+                  id="accept"
+                  value="accept"
+                  required
+                  class="visually-hidden checkbox__input"
+                />
+                <svg class="checkbox__icon">
+                  <use href="./images/icons.svg#icon-modal-check"></use></svg
+                >Погоджуюся з розсилкою та приймаю
+                <a href="#" class="links links--selected checkbox__link">
+                  Умови договору</a
+                ></label
+              >
+            </div>
+            <button class="submit-btn call-form__btn">Відправити</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>

@@ -37,7 +37,8 @@ ul {
   margin-bottom: 0;
 }
 
-/* Elements' common styles */
+/* Utility classes */
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -48,7 +49,7 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section___header {
+.section__header {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -98,6 +99,7 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /* Logo styles */
 .logo {
   display: block;
@@ -114,27 +116,27 @@ ul {
 .footer__logo {
   color: var(--white);
 }
-.logo__text-accent {
+.logo__accent {
   color: var(--accent-blue);
 }
 
 /* Header */
 .header {
   min-width: 1200px;
-  background-color: var(--white);
   border-bottom: 1px solid var(--color-divider-line);
 }
 .header__container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .navigation,
-.navigation__contacts,
-.navigation__menu {
+.contacts,
+.menu {
   display: flex;
 }
-.navigation__contacts,
-.navigation__menu {
+.contacts,
+.menu {
   margin-left: auto;
 }
 .contacts__item:not(:last-child),
@@ -151,11 +153,11 @@ ul {
   letter-spacing: 0.02em;
   color: var(--txt-main);
 }
-.menu__item--current {
+.menu__link--current {
   color: var(--accent-blue);
   position: relative;
 }
-.menu__item--current::after {
+.menu__link--current::after {
   content: "";
   display: block;
   bottom: 0;
@@ -227,15 +229,13 @@ ul {
   text-transform: uppercase;
   color: var(--white);
 }
-
 .socialmedia__link--dark {
   background-color: var(--footer-socialmedia-bg);
 }
 .socialmedia__icon--dark {
   fill: var(--white);
 }
-
-.subscription-form input {
+.subsctiption__input {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -249,7 +249,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--white);
 }
-.subscription-form input::placeholder {
+.subsctiption__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -279,7 +279,7 @@ ul {
 .submit-btn:focus {
   background-color: var(--bg-btn-active);
 }
-.submit-btn > svg {
+.submit-btn__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;

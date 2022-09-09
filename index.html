@@ -27,25 +27,25 @@
         <nav class="navigation">
           <!--Logo-->
           <a href="./index.html" class="links logo"
-            ><span class="logo__text-accent">Web</span>Studio</a
+            ><span class="logo__accent">Web</span>Studio</a
           >
           <!--Browser-->
-          <ul class="list menu navigation__menu">
+          <ul class="list menu">
             <li class="menu__item">
               <a
                 href="./index.html"
-                class="links links--selected menu__link menu__item--current"
+                class="links links--selected menu__link menu__link--current"
                 >Студія</a
               >
             </li>
-            <li>
+            <li class="menu__item">
               <a
                 href="./portfolio.html"
                 class="links links--selected menu__link"
                 >Портфоліо</a
               >
             </li>
-            <li>
+            <li class="menu__item">
               <a href="#" class="links links--selected menu__link"
                 >Контакти</a
               >
@@ -53,7 +53,7 @@
           </ul>
         </nav>
         <!--Contact links-->
-        <ul class="list navigation__contacts contacts">
+        <ul class="list contacts">
           <li class="contacts__item">
             <a
               href="mailto:info@devstudio.com"
@@ -148,8 +148,8 @@
       <!--Projects-->
       <section class="projects section">
         <div class="container">
-          <h2 class="section-header">Чим ми займаємося</h2>
-          <ul class="content-list-general projects-list">
+          <h2 class="section__header">Чим ми займаємося</h2>
+          <ul class="list projects-list">
             <li class="projects-list-item">
               <img
                 src="./images/box-1.jpg"
@@ -501,9 +501,9 @@
         <div class="footer__address">
           <!--Logo-->
           <a href="./index.html" class="links logo footer__logo"
-            ><span class="logo__text-accent">Web</span>Studio</a
+            ><span class="logo__accent">Web</span>Studio</a
           >
-          <!--Footer info-->
+          <!--Address-->
           <address class="address">
             <ul class="list address__list">
               <li class="address__item">
@@ -532,6 +532,7 @@
             </ul>
           </address>
         </div>
+        <!-- Social media -->
         <div class="footer__socialmedia">
           <p class="footer__claimer">Приєднуйтесь</p>
           <ul class="list socialmedia">
@@ -581,15 +582,10 @@
             </li>
           </ul>
         </div>
-
-
-
-
-
-
+        <!-- Subscription form -->
         <div class="footer__subscription">
           <p class="footer__claimer">Підпишіться на розсилку</p>
-          <form action="javascript:void(0);" class="subscription-form">
+          <form action="javascript:void(0);" class="subscription">
             <label for="subsctiption">
               <input
                 type="email"
@@ -597,10 +593,11 @@
                 name="subsctiption"
                 placeholder="E-mail"
                 required
+                class="subsctiption__input"
               />
             </label>
-            <button type="submit" class="btn-genera submit-btn">
-              Підписатися<svg class="footer-socialmedia-icon">
+            <button type="submit" class="submit-btn">
+              Підписатися<svg class="submit-btn__icon">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -608,6 +605,7 @@
         </div>
       </div>
     </footer>
+    <!-- Modal form -->
     <div class="modal-overlay is-hidden" data-modal>
       <div class="modal-window">
         <button data-modal-close class="modal-close-btn">

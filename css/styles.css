@@ -1,4 +1,4 @@
-/* Colors palette: */
+/* Colors palette:
 
 :root {
   --txt-logo-black: #000000;
@@ -20,7 +20,7 @@
 
 /* General */
 
-body {
+/* body {
   font-family: "Roboto", sans-serif;
   color: var(--txt-main);
   line-height: 1;
@@ -35,10 +35,10 @@ p,
 ul {
   margin-top: 0;
   margin-bottom: 0;
-}
+} */
 
 /* Utility classes */
-
+/* 
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -98,11 +98,11 @@ ul {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 /* Logo styles */
 
-.logo {
+/* .logo {
   display: block;
   font-family: "Raleway";
   font-weight: 700;
@@ -122,11 +122,11 @@ ul {
 }
 .logo__accent {
   color: var(--accent-blue);
-}
+} */
 
 /* Header */
 
-.header {
+/* .header {
   min-width: 1200px;
   border-bottom: 1px solid var(--color-divider-line);
 }
@@ -192,7 +192,7 @@ ul {
 .contacts__link:hover .contacts__icon,
 .contacts__link:focus .contacts__icon {
   fill: var(--accent-blue);
-}
+} */
 
 /* Footer */
 
@@ -288,7 +288,7 @@ ul {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-}
+} */
 
 /* HOME PAGE */
 
@@ -454,7 +454,7 @@ ul {
 }
 /* Social media block */
 
-.socialmedia {
+/* .socialmedia {
   display: flex;
   align-items: center;
 }
@@ -491,7 +491,7 @@ ul {
 .socialmedia__link:hover .socialmedia__icon,
 .socialmedia__link:focus .socialmedia__icon {
   fill: var(--white);
-}
+} */
 
 /* Clients */
 

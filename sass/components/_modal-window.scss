@@ -7,7 +7,7 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(opacity);
 }
 
 .is-hidden {
@@ -28,7 +28,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(transform);
 
   .modal-overlay.is-hidden & {
     transform: translate(-50%, -50%) scale(2);
@@ -41,9 +41,7 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100%;
@@ -53,7 +51,7 @@
 .close-btn__icon {
   width: 18px;
   height: 18px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill);
 
   .close-btn:hover &,
   .close-btn:focus & {

@@ -23,12 +23,12 @@
     background-color: $bg-btn-active;
     // outline: none;
   }
-}
 
-.submit-btn__icon {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
 }
 
 .footer__submit-btn {

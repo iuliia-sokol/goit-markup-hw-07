@@ -46,15 +46,15 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100%;
   cursor: pointer;
-}
 
-.close-btn__icon {
-  width: 18px;
-  height: 18px;
-  @include transition(fill);
+  &__icon {
+    width: 18px;
+    height: 18px;
+    @include transition(fill);
 
-  .close-btn:hover &,
-  .close-btn:focus & {
-    fill: $accent-blue;
+    .close-btn:hover &,
+    .close-btn:focus & {
+      fill: $accent-blue;
+    }
   }
 }
